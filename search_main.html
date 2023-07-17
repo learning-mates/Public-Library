@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>레시피 검색</title>
+  <link rel="stylesheet" href="./search_main.css">
+  <script defer src="./search_main.js"></script>
+
+</head>
+
+<body>
+  <h1>레시피 검색</h1>
+  <button onclick="getDate()">검색</button>
+  <p id="search"></p>
+  <script>
+    async function getDate() {
+    const url = 'http://openapi.foodsafetykorea.go.kr/api/sample/COOKRCP01/json/1/5'
+    const response = await fetch(url);
+    const data = await response.json();
+    console.log("date",data.COOKRCP01.row[0]);
+}
+  </script>
+</body>
+
+</html>
