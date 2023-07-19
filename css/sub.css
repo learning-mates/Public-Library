@@ -1,0 +1,30 @@
+@import url('./reset.css');
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+}
+.menu_img_wrap {
+  margin: 0 auto;
+  max-width: 700px;
+}
+.menu_img_wrap img {
+  width: 100%;
+}
+.menual_wrap li {
+  display: flex;
+}
+.menual_wrap li .menual_li_img_wrap {
+  max-width: 200px;
+  flex: 1;
+  margin-right: 30px;
+}
+.menual_wrap li .menual_li_img_wrap img {
+  width: 100%;
+}
+.menual_wrap li p {
+  flex: 1;
+}
