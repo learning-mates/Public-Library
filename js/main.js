@@ -1,14 +1,18 @@
 window.addEventListener('DOMContentLoaded', () => {
   const API_KEY = `f40fc02dbebc40a3a6c4`
-
+  
   //////////////// 음식명 검색 시 실행될 코드 /////////////////////
   const cook_form = document.querySelector('.cook_form');
   const cook_search = document.querySelector('.cook_search');
+  const recipe_list_wrap = document.querySelector('.recipe_list_wrap');
   
   cook_form.addEventListener('submit', (e)=>{
     
     // submit이 되면 전송되는 기본으로 새로고침되는 현상 없애주기
     e.preventDefault()
+
+    // 새로운 리스트 나오게 recipe_list_wrap 밑에 있는 코드들 다 지우기
+    recipe_list_wrap.innerHTML = ''
 
     async function getData(){
 
@@ -28,8 +32,6 @@ window.addEventListener('DOMContentLoaded', () => {
           return
         }
         
-        // 요소 선택하기
-        const recipe_list_wrap = document.querySelector('.recipe_list_wrap');
 
         // 요소 만들기
         const recipe_list_li = document.createElement('li');

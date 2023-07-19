@@ -1,21 +1,31 @@
 @import url('./reset.css');
 
-.form_wrap {
-  margin: 50px 0;
-  max-width: 1400px;
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
 }
-.form_wrap form {
-  width: 500px;
+header {
+  padding: 30px 50px;
+  display: flex;
+  align-items: center;
+}
+header .form_tit {
+  padding: 0 20px;
+}
+header form {
+  /* width: 400px; */
+  width: 100%;
   margin: 0 auto;
   display: flex;
+  margin-right: 20px;
+  flex: 1;
 }
-.form_wrap form .recipe_search {
+header form input {
   width: 100%;
   flex: 1;
   margin-right: 10px;
 }
-.form_wrap form button .search_btn {
-  flex: 1;
+header form button {
 }
 .recipe_list_wrap {
   padding: 0 30px;
