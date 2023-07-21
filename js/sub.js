@@ -21,29 +21,48 @@ window.addEventListener('DOMContentLoaded', () => {
     // console.log(recipe_data)
 
     
-    const container = document.querySelector('.container');
+    // const container = document.querySelector('.container');
+    // const menu_img_wrap = document.querySelector('.menu_img_wrap');
+    const menu_img = document.querySelector('.menu_img_wrap > img');
+    const rcp_nm = document.querySelector('.rcp_nm');
+    const rcp_pat = document.querySelector('.rcp_pat');
+    const rcp_dtls = document.querySelector('.rcp_dtls');
+    const menual_list = document.querySelector('.menual_list');
+    const info_wgt = document.querySelector('.info_wgt');
+    const info_eng = document.querySelector('.info_eng');
+    const info_car = document.querySelector('.info_car');
+    const info_pro = document.querySelector('.info_pro');
+    const info_fat = document.querySelector('.info_fat');
+    const rcp_na_tip = document.querySelector('.rcp_na_tip');
 
-    const menu_img_wrap = document.createElement('div');
-    const menu_img = document.createElement('img');
-    const rcp_nm = document.createElement('p');
-    const rcp_pat = document.createElement('p');
-    const rcp_dtls = document.createElement('p');
-    const menual_wrap = document.createElement('ul');
+    // const menu_img_wrap = document.createElement('div');
+    // const menu_img = document.createElement('img');
+    // const rcp_nm = document.createElement('p');
+    // const rcp_pat = document.createElement('p');
+    // const rcp_dtls = document.createElement('p');
+    // const menual_list = document.createElement('ul');
     
-    container.append(menu_img_wrap, rcp_nm, rcp_pat, rcp_dtls, menual_wrap);
-    menu_img_wrap.append(menu_img);
+    // container.append(menu_img_wrap, rcp_nm, rcp_pat, rcp_dtls, menual_list);
+    // menu_img_wrap.append(menu_img);
 
     menu_img.src = recipe_data.ATT_FILE_NO_MK
+    menu_img.alt = recipe_data.RCP_NM
 
     rcp_nm.innerText = recipe_data.RCP_NM
     rcp_pat.innerText = recipe_data.RCP_PAT2
     rcp_dtls.innerText = recipe_data.RCP_PARTS_DTLS
+    info_wgt.innerText = recipe_data.INFO_ENG
+    info_eng.innerText = recipe_data.INFO_CAR
+    info_car.innerText = recipe_data.INFO_PRO
+    info_pro.innerText = recipe_data.INFO_FAT
+    info_fat.innerText = recipe_data.INFO_NA
+    rcp_na_tip.innerText = recipe_data.RCP_NA_TIP
 
-    menu_img_wrap.classList.add('menu_img_wrap');
-    rcp_nm.classList.add('rcp_nm');
-    rcp_pat.classList.add('rcp_pat');
-    rcp_dtls.classList.add('rcp_dtls');
-    menual_wrap.classList.add('menual_wrap');
+    // menu_img_wrap.classList.add('menu_img_wrap');
+    // rcp_nm.classList.add('rcp_nm');
+    // rcp_pat.classList.add('rcp_pat');
+    // rcp_dtls.classList.add('rcp_dtls');
+    // menual_list.classList.add('menual_list');
 
     // for문을 사용하여 recipe_data의 key 개수만큼 코드를 반복하게 하였다.
     for(key in recipe_data){
@@ -83,7 +102,7 @@ window.addEventListener('DOMContentLoaded', () => {
       menual_li_img.src = menual_img_arr[menual_arr_index]
       menual_li_txt.innerText = menual_arr_ele
 
-      menual_wrap.append(menual_li)
+      menual_list.append(menual_li)
       menual_li.append(menual_li_img_wrap, menual_li_txt)
       menual_li_img_wrap.append(menual_li_img)
     })
