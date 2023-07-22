@@ -51,11 +51,11 @@ window.addEventListener('DOMContentLoaded', () => {
     rcp_nm.innerText = recipe_data.RCP_NM
     rcp_pat.innerText = recipe_data.RCP_PAT2
     rcp_dtls.innerText = recipe_data.RCP_PARTS_DTLS
-    info_wgt.innerText = recipe_data.INFO_ENG
-    info_eng.innerText = recipe_data.INFO_CAR
-    info_car.innerText = recipe_data.INFO_PRO
-    info_pro.innerText = recipe_data.INFO_FAT
-    info_fat.innerText = recipe_data.INFO_NA
+    info_wgt.innerHTML = `<strong>중량</strong><span>${recipe_data.INFO_ENG} g</span>`
+    info_eng.innerHTML = `<strong>열량</strong><span>${recipe_data.INFO_CAR} kcal</span>`
+    info_car.innerHTML = `<strong>탄수화물</strong><span>${recipe_data.INFO_PRO} g</span>`
+    info_pro.innerHTML = `<strong>단백질</strong><span>${recipe_data.INFO_FAT} g</span>`
+    info_fat.innerHTML = `<strong>지방</strong><span>${recipe_data.INFO_NA} g</span>`
     rcp_na_tip.innerText = recipe_data.RCP_NA_TIP
 
     // menu_img_wrap.classList.add('menu_img_wrap');
