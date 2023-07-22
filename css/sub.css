@@ -34,32 +34,36 @@
   padding-bottom: 30px;
   border-bottom: 1px solid #ccc;
 }
-.rcp_dtls_wrap {
-  padding: 30px 0;
-  border-bottom: 1px solid #ccc;
-}
-.rcp_dtls_wrap .rcp_dtls {
-  line-height: 1.5;
-}
-.rcp_info_tip_wrap {
+.rcp_dtls_info_wrap {
   padding: 30px 0;
   display: flex;
   border-bottom: 1px solid #ccc;
 }
-.rcp_info_tip_wrap .rcp_info_wrap {
+.rcp_dtls_info_wrap .rcp_dtls_wrap {
   flex: 1;
+  margin-right: 20px;
 }
-.rcp_info_tip_wrap .rcp_info_wrap p {
+.rcp_dtls_info_wrap .rcp_dtls_wrap .rcp_dtls {
   line-height: 1.5;
 }
-.rcp_info_tip_wrap .rcp_na_tip_wrap {
+.rcp_dtls_info_wrap .rcp_info_wrap {
   flex: 1;
 }
-.rcp_info_tip_wrap .rcp_na_tip_wrap .rcp_na_tip {
-  line-height: 1.5;
+.rcp_dtls_info_wrap .rcp_info_wrap p {
+  position: relative;
+  line-height: 2;
+  /* border-bottom: 1px solid #ccc; */
+}
+.rcp_dtls_info_wrap .rcp_info_wrap p strong {
+  text-align: left;
+}
+.rcp_dtls_info_wrap .rcp_info_wrap p span {
+  position: absolute;
+  right: 0;
 }
 .menual_wrap {
-  padding-top: 30px;
+  padding: 30px 0;
+  border-bottom: 1px solid #ccc;
 }
 .menual_wrap .menual_list {
 
@@ -81,5 +85,11 @@
 }
 .menual_wrap .menual_list li p {
   flex: 1;
+  line-height: 1.5;
+}
+.rcp_na_tip_wrap {
+  padding-top: 30px;
+}
+.rcp_na_tip_wrap .rcp_na_tip {
   line-height: 1.5;
 }
