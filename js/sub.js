@@ -34,6 +34,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const info_pro = document.querySelector('.info_pro');
     const info_fat = document.querySelector('.info_fat');
     const rcp_na_tip = document.querySelector('.rcp_na_tip');
+    const rcp_na_tip_wrap = document.querySelector('.rcp_na_tip_wrap');
 
     // const menu_img_wrap = document.createElement('div');
     // const menu_img = document.createElement('img');
@@ -57,6 +58,10 @@ window.addEventListener('DOMContentLoaded', () => {
     info_pro.innerHTML = `<strong>단백질</strong><span>${recipe_data.INFO_FAT} g</span>`
     info_fat.innerHTML = `<strong>지방</strong><span>${recipe_data.INFO_NA} g</span>`
     rcp_na_tip.innerText = recipe_data.RCP_NA_TIP
+
+    if(recipe_data.RCP_NA_TIP == ''){
+      rcp_na_tip_wrap.remove()
+    }
 
     // menu_img_wrap.classList.add('menu_img_wrap');
     // rcp_nm.classList.add('rcp_nm');
