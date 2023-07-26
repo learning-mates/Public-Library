@@ -116,6 +116,42 @@ window.addEventListener('DOMContentLoaded', () => {
 
   }
 
-
   getData();
+
+
+  const comment_form = document.querySelector('.comment_form');
+  const comment_count = document.querySelector('.comment_count');
+  const emoticon = document.querySelector('.emoticon');
+  const comment = document.querySelector('.comment');
+  const comment_list = document.querySelector('.comment_list');
+  
+  
+  comment_form.addEventListener('submit', (e)=>{
+    e.preventDefault()
+    
+    const comment_list_li_create = document.createElement('li');
+
+    comment_list_li_create.innerText = `${emoticon.value} ${comment.value}`
+
+    comment_list.append(comment_list_li_create)
+
+    comment.value = ''
+
+    const comment_list_li = document.querySelectorAll('.comment_list li')
+
+    // comment_list_li.forEach((ele, )=>{
+
+    // })
+    console.log(comment_list_li_create)
+    console.log(comment_list_li)
+
+    comment_count.innerText = `댓글 ${comment_list_li.length}`
+
+
+
+  })
+
+
+
+
 });

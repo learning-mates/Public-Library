@@ -88,8 +88,44 @@
   line-height: 1.5;
 }
 .rcp_na_tip_wrap {
-  padding-top: 30px;
+  padding: 50px 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 .rcp_na_tip_wrap .rcp_na_tip {
   line-height: 1.5;
+}
+.comment_wrap {
+  margin-top: 50px;
+  padding: 30px 20px;
+  background-color: #eee;
+}
+.comment_wrap .comment_count {
+  margin-bottom: 20px;
+}
+.comment_wrap .comment_form {
+  height: 30px;
+  display: flex;
+}
+.comment_wrap .comment_form select {
+  margin-right: 10px;
+}
+.comment_wrap .comment_form select option {
+
+}
+.comment_wrap .comment_form input {
+  flex: 1;
+  margin-right: 10px;
+  padding-left: 10px;
+}
+.comment_wrap .comment_form button {
+  background-color: #fff;
+  border: solid 1px #777;
+}
+.comment_wrap .comment_list {
+}
+.comment_wrap .comment_list li {
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 20px;
 }
