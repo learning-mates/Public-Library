@@ -9,4 +9,3 @@
 5. [UI 기획]
 
 ## Today's recipe 소개
-## 주요 기능
