@@ -8,5 +8,6 @@
 4. [API 설계]
 5. [UI 기획]
 
-## Today's recipe 소개
+## Today's Recipe 소개
+    오늘의 레시피는 레시피 추천 웹 사이트 입니다.
 ## 주요 기능
