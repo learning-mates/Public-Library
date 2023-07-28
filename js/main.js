@@ -7,6 +7,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const cook_form = document.querySelector('.cook_form');
   const cook_search = document.querySelector('.cook_search');
   const recipe_list_wrap = document.querySelector('.recipe_list_wrap');
+
   
   cook_form.addEventListener('submit', (e)=>{
     
@@ -24,7 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
       let data = await response.json();
       let data2 = data.COOKRCP01.row
       console.log(data2)
-      
+
       // forEach를 사용하여 여러개의 데이터를 하나씩 선택할 수 있다.
       // data2의 개수만큼 반복한다.
       data2.forEach((recipe_data)=>{
@@ -44,14 +45,13 @@ window.addEventListener('DOMContentLoaded', () => {
             return
           }
         }
-
-
+        
         // 해물김치찌개 사진이 이상하여 if문을 사용해 검색결과로 해물김치찌개가 나오면 코드 실행이 되지 않게 하였다.
         if(recipe_data.RCP_NM == '해물김치찌개'){
           return
         }
         
-        
+
         // 요소 만들기
         const recipe_list_li = document.createElement('li');
         const rcp_img_wrap = document.createElement('div');
@@ -73,12 +73,12 @@ window.addEventListener('DOMContentLoaded', () => {
         
         // 데이터에서 음식사진 경로를 받아와 rcp_img의 src에 넣어주어 사진이 나오도록 하였다.
         rcp_img.src = recipe_data.ATT_FILE_NO_MAIN
-        if(recipe_data.ATT_FILE_NO_MAIN == ''){
-            rcp_img.src = recipe_data.ATT_FILE_NO_MK
-        }
-        
-        rcp_nm.innerText = recipe_data.RCP_NM
 
+        if(recipe_data.ATT_FILE_NO_MAIN == ''){
+          rcp_img.src = recipe_data.ATT_FILE_NO_MK
+        }
+
+        rcp_nm.innerText = recipe_data.RCP_NM
         
       })
       
@@ -103,54 +103,42 @@ window.addEventListener('DOMContentLoaded', () => {
       
     }
     getData();
-    
-  })
+  });
 
-  
+
   //////////////// 재료명 검색 시 실행될 코드 /////////////////////
-  const ingre_form = document.querySelector('.ingre_form');
-  const ingre_search = document.querySelector('.ingre_search');
-  
-  
-  ingre_form.addEventListener('submit', (e)=>{
-    e.preventDefault();
-    async function getData(){
-      let url = `http://openapi.foodsafetykorea.go.kr/api/${API_KEY}/COOKRCP01/json/1/1000/RCP_PARTS_DTLS=${ingre_search.value}/`
-      let response = await fetch(url)
-      let data = await response.json();
-      let data2 = data.COOKRCP01.row
-      data2.forEach((recipe_data)=>{
+  const ingre_form = document.querySelector(".ingre_form");
+  const ingre_search = document.querySelector(".ingre_search");
 
-        if(recipe_data.RCP_NM == '해물김치찌개'){
-          return
+  ingre_form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    async function getData() {
+      let url = `http://openapi.foodsafetykorea.go.kr/api/${API_KEY}/COOKRCP01/json/1/1000/RCP_PARTS_DTLS=${ingre_search.value}/`;
+      let response = await fetch(url);
+      let data = await response.json();
+      let data2 = data.COOKRCP01.row;
+      data2.forEach((recipe_data) => {
+        if (recipe_data.RCP_NM == "해물김치찌개") {
+          return;
         }
 
-        const recipe_list_wrap = document.querySelector('.recipe_list_wrap');
-
-        const recipe_list_li = document.createElement('li');
-        const rcp_img_wrap = document.createElement('div');
-        const rcp_img = document.createElement('img');
-        const rcp_nm = document.createElement('p');
-
+        const recipe_list_wrap = document.querySelector(".recipe_list_wrap");
+        const recipe_list_li = document.createElement("li");
+        const rcp_img_wrap = document.createElement("div");
+        const rcp_img = document.createElement("img");
+        const rcp_nm = document.createElement("p");
 
         recipe_list_wrap.append(recipe_list_li);
-        recipe_list_li.append(rcp_img_wrap, rcp_nm);
-        rcp_img_wrap.append(rcp_img);
+        recipe_list_li.append(rcp_img, rcp_nm);
 
-        recipe_list_li.setAttribute('data-RCP_NM', recipe_data.RCP_NM);
+        recipe_list_li.setAttribute("data-RCP_NM", recipe_data.RCP_NM);
 
+        rcp_img_wrap.classList.add("rcp_img_wrap");
+        rcp_nm.classList.add("rcp_nm");
 
-        rcp_img_wrap.classList.add('rcp_img_wrap');
-        rcp_nm.classList.add('rcp_nm');
-
-
-        rcp_img.src = recipe_data.ATT_FILE_NO_MAIN
-
-
-
-        rcp_nm.innerText = recipe_data.RCP_NM
-
-      })
+        rcp_img.src = recipe_data.ATT_FILE_NO_MAIN;
+        rcp_nm.innerText = recipe_data.RCP_NM;
+      });
 
       let recipe_list_li = document.querySelectorAll('.recipe_list_wrap > li')
 
@@ -164,9 +152,6 @@ window.addEventListener('DOMContentLoaded', () => {
     
     }
     getData();
-
-  })
-
-
+  });
 
 });
