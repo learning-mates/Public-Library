@@ -55,7 +55,7 @@ window.addEventListener("DOMContentLoaded", () => {
     rcp_na_tip.innerText = recipe_data.RCP_NA_TIP;
 
     if (recipe_data.RCP_NA_TIP == "") {
-      rcp_na_tip_wrap.remw111wwwwove();
+      rcp_na_tip_wrap.remove();
     }
 
     // menu_img_wrap.classList.add('menu_img_wrap');
