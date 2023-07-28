@@ -26,6 +26,14 @@ header {
 
   display: flex;
   align-items: center;
+  color: #bf917e;
+  margin-left: 100px;
+}
+span {
+  color: #bf917e;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Noto Sans KR", sans-serif;
 }
 header .form_tit {
   padding: 0 20px;
@@ -43,6 +51,15 @@ header form input {
   flex: 1;
   margin-right: 10px;
 }
+.form_wrap {
+  margin: 10px 0;
+  max-width: 1400px;
+  position: relative;
+  left: 120px;
+}
+.form_wrap form {
+  width: 500px;
+}
 header form button {
 }
 .recipe_recommand_title {
@@ -53,12 +70,12 @@ header form button {
   justify-content: center;
 }
 .recipe_recommand_title::before {
-  content: "|     ";
+  content: "| ";
 }
 .recipe_recommand_title::after {
   content: "|";
 }
-.recipe_list_wrap {
+.recipe_recommand {
   padding: 50px 30px;
   margin: 0 auto;
   max-width: 1400px;
@@ -137,13 +154,17 @@ header form button {
 }
 .rcp_recommand_img5 p {
   position: relative;
-  cursor: pointer;
-  overflow: hidden;
+  text-align: center;
+  bottom: 41px;
+  font-family: "Noto Sans KR", sans-serif;
+  color: white;
+  background-color: rgba(147, 112, 98, 0.9);
+  height: 40px;
+  line-height: 41px;
 }
 .rcp_recommand_img6 img {
   width: 100%;
-  aspect-ratio: 0.8/1;
-  border-radius: 10px;
+  border-radius: 0 0 10px 0;
 }
 .rcp_recommand_img6 p {
   position: relative;
@@ -187,5 +208,13 @@ header form button {
   border-radius: 10px;
 }
 .recipe_list_wrap li p {
+  position: relative;
   text-align: center;
+  bottom: 41px;
+  font-family: "Noto Sans KR", sans-serif;
+  color: white;
+  background-color: rgba(147, 112, 98, 0.9);
+  height: 40px;
+  line-height: 41px;
+  border-radius: 0 0 10px 10px;
 }
