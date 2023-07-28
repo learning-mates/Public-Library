@@ -1,31 +1,41 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./css/main.css">
-  <script src="./js/jquery-3.7.0.min.js"></script>
-  <script defer src="./js/main.js"></script>
-</head>
-<body>
-  <div class="container">
-    <header>
-      <p class="form_tit">오늘의 음식</p>
-      <form class="cook_form">
-        <input type="text" class="cook_search">
-        <button>검색</button>
-      </form>
-      <p class="form_tit">오늘의 재료</p>
-      <form class="ingre_form">
-        <input type="text" class="ingre_search">
-        <button>검색</button>
-      </form>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&display=swap" rel="stylesheet">
 
-    <ul class="recipe_list_wrap">
-
-    </ul>
-  </div>
-</body>
+    <script src="./js/jquery-3.7.0.min.js"></script>
+    <script defer src="./js/api_레시피.js"></script>
+  </head>
+  <body>
+   <header >
+    <h1 class="logo">Today's Menu</h1>
+    <div class="container">
+      <div class="form_wrap">
+        <form class="cook_form">
+         <span>메뉴&nbsp;&nbsp;&nbsp;</span>
+         <input type="text" class="cook_search"  placeholder="ex)김치찌개"/>
+         <button>검색</button>
+        </form>
+      </div>
+      <div class="form_wrap">
+        <form class="ingre_form">
+          <span>재료&nbsp;&nbsp;&nbsp;</span>
+          <input type="text" class="ingre_search" placeholder="ex)돼지고기"/>
+          <button>검색</button>
+        </form>
+      </div>
+  </header>
+      <ul class="recipe_list_wrap"></ul>
+  
+    </div>
+  </body>
 </html>

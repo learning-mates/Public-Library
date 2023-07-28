@@ -1,5 +1,6 @@
 @import url('./reset.css');
 
+<<<<<<< HEAD
 .sub_tit {
   display: inline-block;
   font-size: 30px;
@@ -8,6 +9,11 @@
   padding-bottom: 5px;
 }
 
+=======
+body {
+
+}
+>>>>>>> main
 .container {
   max-width: 700px;
   margin: 0 auto;
