@@ -7,61 +7,49 @@
 header {
   border-bottom: 1px solid rgba(224, 224, 224, 0.5);
   display: flex;
-  justify-content: center;
   align-items: center;
   justify-content: space-between;
   font-family: "Caveat", cursive;
   background-color: white;
-  position: fixed;
-  z-index: 999;
+  position: sticky;
   top: 0;
-  right: 0;
-  left: 0;
-}
-
-.logo {
-  width: 1000px;
   height: 100px;
+  z-index: 99;
+}
+header .logo {
+  white-space: nowrap;
   font-size: 50px;
-
-  display: flex;
   align-items: center;
   color: #bf917e;
-  margin-left: 100px;
+  margin-right: 30px;
 }
-span {
-  color: #bf917e;
-  font-size: 20px;
-  font-weight: bold;
-  font-family: "Noto Sans KR", sans-serif;
+header .form_wrap {
+  display: flex;
 }
-header .form_tit {
-  padding: 0 20px;
-}
-header form {
+header .form_wrap form {
   /* width: 400px; */
   width: 100%;
   margin: 0 auto;
   display: flex;
   margin-right: 20px;
-  flex: 1;
 }
-header form input {
+header .form_wrap form:last-child {
+  margin-right: 0;
+}
+header .form_wrap form .form_tit {
+  margin-right: 10px;
+  color: #bf917e;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Noto Sans KR", sans-serif;
+}
+header .form_wrap form input {
   width: 100%;
   flex: 1;
   margin-right: 10px;
+  max-width: 300px;
 }
-.form_wrap {
-  margin: 10px 0;
-  max-width: 1400px;
-  position: relative;
-  left: 120px;
-}
-.form_wrap form {
-  width: 500px;
-}
-header form button {
-}
+
 .recipe_recommand_title {
   padding: 150px 10px 0 10px;
   font-size: 20px;
