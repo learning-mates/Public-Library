@@ -107,21 +107,21 @@ header .form_wrap form input {
 
 
 
-.recipe_title {
+.rcp_wrap .rcp_tit {
   padding: 150px 10px 0 10px;
   font-size: 20px;
   font-weight: 700;
   display: flex;
   justify-content: center;
 }
-.recipe_title::before {
+.rcp_wrap .rcp_tit::before {
   content: "|";
 }
-.recipe_title::after {
+.rcp_wrap .rcp_tit::after {
   content: "|";
 }
 
-.recipe_list_wrap {
+.rcp_list_wrap {
   padding: 50px 30px;
   margin: 0 auto;
   max-width: 1400px;
@@ -129,15 +129,15 @@ header .form_wrap form input {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 50px;
 }
-.recipe_list_wrap li {
+.rcp_list_wrap li {
   cursor: pointer;
 }
-.recipe_list_wrap li img {
+.rcp_list_wrap li img {
   width: 100%;
   aspect-ratio: 1;
   border-radius: 10px;
 }
-.recipe_list_wrap li p {
+.rcp_list_wrap li p {
   position: relative;
   text-align: center;
   bottom: 41px;

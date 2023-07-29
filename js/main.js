@@ -6,7 +6,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   //////////////// 음식명 검색 시 실행될 코드 /////////////////////
   const cook_form = document.querySelector(".cook_form");
   const cook_search = document.querySelector(".cook_search");
-  const recipe_list_wrap = document.querySelector(".recipe_list_wrap");
+  const rcp_list_wrap = document.querySelector(".rcp_list_wrap");
 
   const now = new Date();
   const day = now.getDate();
@@ -118,8 +118,8 @@ window.addEventListener("DOMContentLoaded", async () => {
     // submit이 되면 전송되는 기본으로 새로고침되는 현상 없애주기
     e.preventDefault();
 
-    // 새로운 리스트 나오게 recipe_list_wrap 밑에 있는 코드들 다 지우기
-    recipe_list_wrap.innerHTML = "";
+    // 새로운 리스트 나오게 rcp_list_wrap 밑에 있는 코드들 다 지우기
+    rcp_list_wrap.innerHTML = "";
 
     async function getData() {
       // cook_search.value에는 input에 입력한 음식명이 들어있다.
@@ -154,18 +154,18 @@ window.addEventListener("DOMContentLoaded", async () => {
           return;
         }
         // 요소 만들기
-        const recipe_list_li = document.createElement("li");
+        const rcp_list_li = document.createElement("li");
         const rcp_img_wrap = document.createElement("div");
         const rcp_img = document.createElement("img");
         const rcp_nm = document.createElement("p");
         // 요소를 부모 요소 맨 뒤에 추가하기(연결)
-        recipe_list_wrap.append(recipe_list_li);
-        recipe_list_li.append(rcp_img_wrap, rcp_nm);
+        rcp_list_wrap.append(rcp_list_li);
+        rcp_list_li.append(rcp_img_wrap, rcp_nm);
         rcp_img_wrap.append(rcp_img);
 
         // 요소의 속성을 만들고(data-내가 정한 이름) 레시피 이름을 속성값으로 넣어주었다.
         // 검색 결과로 나온 음식을 클릭할 때 이 레시피 이름(속성값)을 받아와 sub페이지에 해당 레시피 데이터를 나오게 할 수 있다.
-        recipe_list_li.setAttribute("data-RCP_NM", recipe_data.RCP_NM);
+        rcp_list_li.setAttribute("data-RCP_NM", recipe_data.RCP_NM);
 
         // css를 쉽게 사용할 수 있도록 class를 부여하였다.
         rcp_img_wrap.classList.add("rcp_img_wrap");
@@ -182,14 +182,14 @@ window.addEventListener("DOMContentLoaded", async () => {
       });
 
       // 여러개의 요소 선택하기
-      let recipe_list_li = document.querySelectorAll(".recipe_list_wrap > li");
+      let rcp_list_li = document.querySelectorAll(".rcp_list_wrap > li");
 
       // 요소가 여러개니 forEach를 사용하여 요소 하나하나씩 선택할 수 있도록 하였다.
-      recipe_list_li.forEach((recipe_list_li_ele) => {
+      rcp_list_li.forEach((rcp_list_li_ele) => {
         // 검색결과로 나온 음식을 클릭 시
-        recipe_list_li_ele.addEventListener("click", () => {
+        rcp_list_li_ele.addEventListener("click", () => {
           // 위에서 내가 만든 속성의 속성값을(레시피 이름)
-          let li_RCP_NM = recipe_list_li_ele.getAttribute("data-RCP_NM").trim();
+          let li_RCP_NM = rcp_list_li_ele.getAttribute("data-RCP_NM").trim();
 
           // location.href를 사용하여 sub페이지로 이동할 수 있게 하였다.
           // location.href = '이동할 주소'는 현재 주소를 이동할 주소로 바꾼다는 의미이다.
@@ -216,16 +216,16 @@ window.addEventListener("DOMContentLoaded", async () => {
           return;
         }
 
-        const recipe_list_wrap = document.querySelector(".recipe_list_wrap");
-        const recipe_list_li = document.createElement("li");
+        const rcp_list_wrap = document.querySelector(".rcp_list_wrap");
+        const rcp_list_li = document.createElement("li");
         const rcp_img_wrap = document.createElement("div");
         const rcp_img = document.createElement("img");
         const rcp_nm = document.createElement("p");
 
-        recipe_list_wrap.append(recipe_list_li);
-        recipe_list_li.append(rcp_img, rcp_nm);
+        rcp_list_wrap.append(rcp_list_li);
+        rcp_list_li.append(rcp_img, rcp_nm);
 
-        recipe_list_li.setAttribute("data-RCP_NM", recipe_data.RCP_NM);
+        rcp_list_li.setAttribute("data-RCP_NM", recipe_data.RCP_NM);
 
         rcp_img_wrap.classList.add("rcp_img_wrap");
         rcp_nm.classList.add("rcp_nm");
@@ -234,11 +234,11 @@ window.addEventListener("DOMContentLoaded", async () => {
         rcp_nm.innerText = recipe_data.RCP_NM;
       });
 
-      let recipe_list_li = document.querySelectorAll(".recipe_list_wrap > li");
+      let rcp_list_li = document.querySelectorAll(".rcp_list_wrap > li");
 
-      recipe_list_li.forEach((recipe_list_li_ele) => {
-        recipe_list_li_ele.addEventListener("click", () => {
-          let li_RCP_NM = recipe_list_li_ele.getAttribute("data-RCP_NM").trim();
+      rcp_list_li.forEach((rcp_list_li_ele) => {
+        rcp_list_li_ele.addEventListener("click", () => {
+          let li_RCP_NM = rcp_list_li_ele.getAttribute("data-RCP_NM").trim();
           location.href = `sub.html?${li_RCP_NM}`;
         });
       });
