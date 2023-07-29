@@ -49,17 +49,27 @@ header .form_wrap form input {
 }
 
 .recipe_recommand_title {
-  padding: 50px 20px 0;
+  position: relative;
+  /* padding: 50px 20px 0; */
   font-size: 20px;
   font-weight: 700;
   /* display: flex; */
   text-align: center;
 }
 .recipe_recommand_title::before {
+  height: 100%;
+  width: 1px;
   content: "|";
+  background-color: #000;
+  display: inline-block;
 }
 .recipe_recommand_title::after {
-  content: "|";
+  position: absolute;
+  height: 100%;
+  content: "";
+  width: 1px;
+  display: inline-block;
+  background-color: yellow;
 }
 
 .recipe_recommand {
@@ -70,15 +80,31 @@ header .form_wrap form input {
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(3, 1fr);
 }
+
+
+
+
+
 .rcp_recommand_img {
   grid-column: 1/3;
   grid-row: 1/3;
 }
-.rcp_recommand_img img {
+
+.recipe_recommand img {
   width: 100%;
   height: 100%;
-  border-radius: 10px 0 0 0;
 }
+.recipe_recommand p {
+  position: relative;
+  text-align: center;
+  bottom: 41px;
+  font-family: "Noto Sans KR", sans-serif;
+  color: white;
+  background-color: rgba(147, 112, 98, 0.9);
+  height: 40px;
+  line-height: 41px;
+}
+
 
 .rcp_recommand_img p {
   position: relative;
@@ -91,79 +117,15 @@ header .form_wrap form input {
   line-height: 41px;
 }
 
-.rcp_recommand_img2 img {
-  width: 100%;
-  height: 100%;
-  border-radius: 0 10px 0 0;
-}
-.rcp_recommand_img2 p {
-  position: relative;
-  text-align: center;
-  bottom: 41px;
-  font-family: "Noto Sans KR", sans-serif;
-  color: white;
-  background-color: rgba(147, 112, 98, 0.9);
-  height: 40px;
-  line-height: 41px;
-  border-radius: 0 10px 0 0;
-}
-.rcp_recommand_img3 img {
-  width: 100%;
-  height: 100%;
-}
-.rcp_recommand_img3 p {
-  position: relative;
-  text-align: center;
-  bottom: 41px;
-  font-family: "Noto Sans KR", sans-serif;
-  color: white;
-  background-color: rgba(147, 112, 98, 0.9);
-  height: 40px;
-  line-height: 41px;
-}
-.rcp_recommand_img4 img {
-  width: 100%;
-  border-radius: 0 0 0 10px;
-}
-.rcp_recommand_img4 p {
-  position: relative;
-  text-align: center;
-  bottom: 41px;
-  font-family: "Noto Sans KR", sans-serif;
-  color: white;
-  background-color: rgba(147, 112, 98, 0.9);
-  height: 40px;
-  line-height: 41px;
-  border-radius: 0 0 0 10px;
-}
-.rcp_recommand_img5 img {
-  width: 100%;
-}
-.rcp_recommand_img5 p {
-  position: relative;
-  text-align: center;
-  bottom: 41px;
-  font-family: "Noto Sans KR", sans-serif;
-  color: white;
-  background-color: rgba(147, 112, 98, 0.9);
-  height: 40px;
-  line-height: 41px;
-}
-.rcp_recommand_img6 img {
-  width: 100%;
-  border-radius: 0 0 10px 0;
-}
-.rcp_recommand_img6 p {
-  position: relative;
-  text-align: center;
-  bottom: 41px;
-  font-family: "Noto Sans KR", sans-serif;
-  color: white;
-  background-color: rgba(147, 112, 98, 0.9);
-  height: 40px;
-  line-height: 41px;
-  border-radius: 0 0 10px 0;
-}
+
+
+
+
+
+
+
+
+
 .recipe_title {
   padding: 150px 10px 0 10px;
   font-size: 20px;
