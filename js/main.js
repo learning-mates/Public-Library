@@ -24,6 +24,37 @@ window.addEventListener("DOMContentLoaded", async () => {
 
   // 오늘의 추천 메뉴
   const recipe_recommand = document.querySelector(".recipe_recommand");
+
+  for(let i = 0; i <= 6; i++){
+    const recipe_recommand_li = document.createElement('li');
+    const rcp_img2 = document.createElement("img");
+    const rcp_nm2 = document.createElement("p");
+    recipe_recommand.append(recipe_recommand_li);
+    recipe_recommand_li.append(rcp_img2, rcp_nm2);
+
+    // recipe_recommand_li.setAttribute("data-RCP_NM", data2.RCP_NM);
+    // rcp_img2_recommand.classList.add("rcp_img_recommand");
+    
+    rcp_nm2.classList.add("rcp_nm2");
+    rcp_img2.src = data2[day + i].ATT_FILE_NO_MAIN;
+    rcp_nm2.innerText = data2[day + i].RCP_NM;
+    // rcp_img3.src = data2[day + 1].ATT_FILE_NO_MAIN;
+    // rcp_nm3.innerText = data2[day + 1].RCP_NM;
+    // rcp_img4.src = data2[day + 2].ATT_FILE_NO_MAIN;
+    // rcp_nm4.innerText = data2[day + 2].RCP_NM;
+    // rcp_img5.src = data2[day + 3].ATT_FILE_NO_MAIN;
+    // rcp_nm5.innerText = data2[day + 3].RCP_NM;
+    // rcp_img6.src = data2[day + 4].ATT_FILE_NO_MAIN;
+    // rcp_nm6.innerText = data2[day + 4].RCP_NM;
+    // rcp_img7.src = data2[day + 5].ATT_FILE_NO_MAIN;
+    // rcp_nm7.innerText = data2[day + 5].RCP_NM;
+  }
+  
+  const recipe_recommand_li_first = document.querySelector('.recipe_recommand li');
+
+  recipe_recommand_li_first.classList.add("rcp_recommand_img");
+
+
   const recipe_recommand_li = document.createElement("li");
   const recipe_recommand_li2 = document.createElement("li");
   const recipe_recommand_li3 = document.createElement("li");
