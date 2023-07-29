@@ -90,7 +90,6 @@ window.addEventListener("DOMContentLoaded", async () => {
   // recipe_recommand_li6.append(rcp_img7, rcp_nm7);
 
   // // 속성
-  // recipe_recommand_li.setAttribute("data-RCP_NM", data2.RCP_NM);
   // rcp_img2_recommand.classList.add("rcp_img_recommand");
   // recipe_recommand_li.classList.add("rcp_recommand_img");
   // recipe_recommand_li2.classList.add("rcp_recommand_img2");
