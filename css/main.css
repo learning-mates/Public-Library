@@ -53,27 +53,17 @@ header .form_wrap form input {
 }
 .rcp_recommand_wrap .rcp_recommand_tit {
   position: relative;
-  /* padding: 50px 20px 0; */
   font-size: 20px;
   font-weight: 700;
-  /* display: flex; */
   text-align: center;
   margin-bottom: 30px;
+  background-color: #fff;
 }
 .rcp_recommand_wrap .rcp_recommand_tit::before {
-  height: 100%;
-  width: 1px;
   content: "|";
-  background-color: #000;
-  display: inline-block;
 }
 .rcp_recommand_wrap .rcp_recommand_tit::after {
-  position: absolute;
-  height: 100%;
-  content: "";
-  width: 1px;
-  display: inline-block;
-  background-color: yellow;
+  content: "|";
 }
 
 .rcp_recommand_wrap .rcp_recommand_list_wrap {
@@ -125,7 +115,7 @@ header .form_wrap form input {
   justify-content: center;
 }
 .recipe_title::before {
-  content: "| ";
+  content: "|";
 }
 .recipe_title::after {
   content: "|";
