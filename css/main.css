@@ -48,22 +48,26 @@ header .form_wrap form input {
   max-width: 300px;
 }
 
-.recipe_recommand_title {
+.rcp_recommand_wrap {
+  padding: 50px 30px;
+}
+.rcp_recommand_wrap .rcp_recommand_tit {
   position: relative;
   /* padding: 50px 20px 0; */
   font-size: 20px;
   font-weight: 700;
   /* display: flex; */
   text-align: center;
+  margin-bottom: 30px;
 }
-.recipe_recommand_title::before {
+.rcp_recommand_wrap .rcp_recommand_tit::before {
   height: 100%;
   width: 1px;
   content: "|";
   background-color: #000;
   display: inline-block;
 }
-.recipe_recommand_title::after {
+.rcp_recommand_wrap .rcp_recommand_tit::after {
   position: absolute;
   height: 100%;
   content: "";
@@ -72,29 +76,23 @@ header .form_wrap form input {
   background-color: yellow;
 }
 
-.recipe_recommand {
-  padding: 50px 30px;
-  margin: 0 auto;
-  max-width: 1400px;
+.rcp_recommand_wrap .rcp_recommand_list_wrap {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(3, 1fr);
 }
+.rcp_recommand_wrap .rcp_recommand_list_wrap li {
 
-
-
-
-
-.rcp_recommand_img {
+}
+.rcp_recommand_wrap .rcp_recommand_list_wrap li:first-child {
   grid-column: 1/3;
   grid-row: 1/3;
 }
-
-.recipe_recommand img {
+.rcp_recommand_wrap .rcp_recommand_list_wrap li img {
   width: 100%;
   height: 100%;
 }
-.recipe_recommand p {
+.rcp_recommand_wrap .rcp_recommand_list_wrap li p {
   position: relative;
   text-align: center;
   bottom: 41px;
@@ -104,18 +102,11 @@ header .form_wrap form input {
   height: 40px;
   line-height: 41px;
 }
-
-
-.rcp_recommand_img p {
-  position: relative;
-  text-align: center;
-  bottom: 41px;
-  font-family: "Noto Sans KR", sans-serif;
-  color: white;
+.rcp_recommand_wrap .rcp_recommand_list_wrap li:first-child p {
   background-color: #2a2a2a;
-  height: 40px;
-  line-height: 41px;
 }
+
+
 
 
 
