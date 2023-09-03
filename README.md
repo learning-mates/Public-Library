@@ -31,7 +31,7 @@
 
 |메인|서브|
 |:----:|:----:|
-|<img src='https://user-images.githubusercontent.com/96277798/265259551-dc35bbff-3b0c-4fce-a119-7fae47bb2f8e.png' width="300" />|<img src='https://github.com/SeSAC-PIUM/.github/assets/77762680/b4e44ff1-fa9c-4d41-8cf4-af352728c1ea' width="300"/><br /><br /><br /><img src='https://user-images.githubusercontent.com/96277798/265259562-c7a0d33a-43b3-427a-96ab-36dfb3884914.png' width="300" />|
+|<img src='https://user-images.githubusercontent.com/96277798/265259551-dc35bbff-3b0c-4fce-a119-7fae47bb2f8e.png' width="400" />|<img src='https://user-images.githubusercontent.com/96277798/265259562-c7a0d33a-43b3-427a-96ab-36dfb3884914.png' width="400"/>|
 
 <pre>
 <strong> ✨메인 </strong>
