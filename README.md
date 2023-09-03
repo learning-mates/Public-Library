@@ -1,7 +1,5 @@
 # Today's Recipe
 
-<br />
-
 ## Today's Recipe 소개
 
 <img width="800" alt="pium_001" src="https://github.com/SeSAC-PIUM/.github/assets/77762680/86e8b609-5b25-4940-869a-f930eb8e1c0e">
@@ -33,7 +31,7 @@
 
 |메인|서브|
 |:----:|:----:|
-|<img src='https://github.com/SeSAC-PIUM/.github/assets/77762680/7ab6ffed-f69d-4ef7-8eeb-c0ea4c538e77' width="300" />|<img src='https://github.com/SeSAC-PIUM/.github/assets/77762680/b4e44ff1-fa9c-4d41-8cf4-af352728c1ea' width="300"/><br /><br /><br /><img src='https://github.com/SeSAC-PIUM/.github/assets/77762680/d424331e-c329-4217-b625-178ddee7138e' width="300" />|
+|<img src='https://user-images.githubusercontent.com/96277798/265259551-dc35bbff-3b0c-4fce-a119-7fae47bb2f8e.png' width="300" />|<img src='https://github.com/SeSAC-PIUM/.github/assets/77762680/b4e44ff1-fa9c-4d41-8cf4-af352728c1ea' width="300"/><br /><br /><br /><img src='https://user-images.githubusercontent.com/96277798/265259562-c7a0d33a-43b3-427a-96ab-36dfb3884914.png' width="300" />|
 
 <pre>
 <strong> ✨메인 </strong>
