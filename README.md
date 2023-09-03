@@ -2,6 +2,7 @@
 
 ## Today's Recipe 소개
 
+https://github.com/learning-mates/Today_Recipe/assets/96277798/fe067ebb-f89f-4dd3-a8e1-b5ee627a32a5.webm
 <img width="800" alt="pium_001" src="https://github.com/SeSAC-PIUM/.github/assets/77762680/86e8b609-5b25-4940-869a-f930eb8e1c0e">
 
 ### [🔗 배포 링크](https://learning-mates.github.io/Today_Recipe/)
@@ -27,7 +28,7 @@
 
 <br />
 
-## ✨ 페이지 설명
+## ✨ 페이지 코드 설명
 
 |메인|서브|
 |:----:|:----:|
