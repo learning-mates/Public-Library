@@ -2,18 +2,10 @@
 
 #### 목차
 
-1. [Today's recipe 소개](#todays-recipe-소개)
-2. [팀원](#팀원)
-3. [주요 기능](#주요-기능)
-4. [메인 로직](#메인-로직)
-
-<br/>
-<br/>
-
 ## Today's Recipe 소개
 <img width="800" alt="pium_001" src="https://github.com/SeSAC-PIUM/.github/assets/77762680/86e8b609-5b25-4940-869a-f930eb8e1c0e">
 
-### [🔗 배포 링크](https://sesac-pium.netlify.app/)
+### [🔗 배포 링크](https://learning-mates.github.io/Today_Recipe/)
 > Today's Recipe는 레시피 추천 및 검색 웹 사이트 입니다.
 
 <br/>
@@ -31,6 +23,9 @@
 
 ## 주요 기능
 1. 
+
+<br/>
+<br/>
 
 ## 메인 로직
 
@@ -73,17 +68,11 @@
 <br/>
 <br/>
 
-## 🗓️ 
-#### • 진행기간 23년 8월 7일 ~ 21일 (약 2주)
+## 🗓️ 진행기간
+#### 2023년 7월 14일 ~ 26일 (약 2주)
 
-|DAY|TASK|
-|----|----|
-|**기획/디자인 중심**<br>(8/4 ~9)|- 프로젝트 주세선정<br>- 협업툴 결정 (`slack`,`Figma`)<br><br> - 필요기능 나열 후 페이지 도출 <br>- 각자 페이지를 나눠 내용 구체화 후 와이어프레임 작성 <br><br> - 와이어프레임 피드백/수정 <br>- 페이지 디자인 완성 
-|**개발 중심**<br>(8/10 ~20)|- 규칙/개발환경 세팅<br>- root.css / global style 설정<br>- 디렉토리 구조 설정 <br><br> - 각자 페이지 맡아 개발시작 <br><br> - 반응형 구현  <br>- 페이지 배포/에러수정 <br>- 발표자료 준비
-|**발표**<br>(8/21)|- 프로젝트 발표/시연|
 
-<br/>
-<br/>
+
 
 
 <p align="right"><a href="#todays-recipe">(🔼 Top)</a></p>
