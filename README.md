@@ -35,29 +35,6 @@
 ## 메인 로직
 
 
-# SeSAC-PIUM (피움)
-<img width="800" alt="pium_001" src="https://github.com/SeSAC-PIUM/.github/assets/77762680/86e8b609-5b25-4940-869a-f930eb8e1c0e">
-
-### [🔗 배포 링크](https://sesac-pium.netlify.app/)
-> SeSAC 수강생들을 위한 프로젝트 매칭 플랫폼
-
-<br/>
-<br/>
-
-
-## ✨ 수상
-> SeSAC 웹 퍼블리싱 교육과정 팀프로젝트 발표 대상 (1위)
-<img width="500" alt="main" src="https://github.com/SeSAC-PIUM/.github/assets/77762680/ff6ead33-4d16-4052-8012-9bd766676a45">
-
-## 📢 발표자료
-<img width="400" alt="pium_003" src="https://github.com/SeSAC-PIUM/.github/assets/77762680/5d3b5924-ae0e-4b13-bf87-f4810846dd8f"> 
-<img width="400" alt="pium_003" src="https://github.com/SeSAC-PIUM/.github/assets/77762680/42841e31-f661-4953-b9b1-2105de80deb0"> 
-
-### [🔗 Figma 링크](https://www.figma.com/proto/guqt0L4dH3JvXKZrOd1kzR/%EC%9D%BC%EC%84%9D%EC%82%AC%EC%A1%B0_%ED%94%BC%EC%9B%80_%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C?page-id=0%3A1&type=design&node-id=1-1018&viewport=743%2C626%2C0.07&t=babcv3zFO01CWMd7-1&scaling=contain&starting-point-node-id=1%3A1018&mode=design)
-<br/>
-<br/>
-
-## ✨ 프로젝트 설명
 <br/>
 <br/>
 
@@ -109,7 +86,7 @@
 <br/>
 
 
-<p align="right"><a href="#top">(🔼 Top)</a></p>
+<p align="right"><a href="#todays-recipe">(🔼 Top)</a></p>
 
 <br/>
 <br/>
