@@ -4,17 +4,17 @@
 
 ### [🔗 배포 링크](https://learning-mates.github.io/Today_Recipe/)
 <pre>
-Today's Recipe는 레시피 추천 및 검색 웹 사이트 입니다.
+<strong>Today's Recipe는 레시피 추천 및 검색 웹 사이트 입니다.</strong>
 </pre>
 
 <br />
 
 ## 👩‍💻 팀원
 
-| 이름 | 포지션 | email |
+| 이름 | 포지션 | GitHub |
 | --- | --- | --- |
-| 유미정 | 프론트엔드 | ymj369@nate.com |
-| 양희광 | 프론트엔드 | ekzm7040@naver.com |
+| 유미정 | 프론트엔드 | https://github.com/ymj0828 |
+| 양희광 | 프론트엔드 | https://github.com/YangHK95 |
 
 <br />
 
@@ -23,7 +23,7 @@ Today's Recipe는 레시피 추천 및 검색 웹 사이트 입니다.
 - **메뉴 추천** : 매일 매일 추천하는 메뉴가 바뀜
 - **메뉴명 전달** : 레시피를 클릭하면 레시피의 상세보기가 나옴
 - **레시피 상세보기** : 메뉴의 종류, 재료, 영양정보, 레시피, 저감조리법을 알려줌
-- **배포** : Github.io로 배포
+- **배포** : GitHub.io로 배포
 
 <br />
 
