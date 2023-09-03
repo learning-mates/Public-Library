@@ -11,15 +11,12 @@ window.addEventListener("DOMContentLoaded", async () => {
 
   const now = new Date();
   const day = now.getDate()
-  console.log(day);
   
   let url = `http://openapi.foodsafetykorea.go.kr/api/${API_KEY}/COOKRCP01/json/${day}/${day+5}`;
-  // let url = `http://openapi.foodsafetykorea.go.kr/api/${API_KEY}/COOKRCP01/json/1/40`;
   let response = await fetch(url);
   let data = await response.json();
   let data2 = data.COOKRCP01.row;
   
-  // console.log("data2", data2);
   
   // 오늘의 추천 메뉴
   const rcp_recommand_list_wrap = document.querySelector(".rcp_recommand_list_wrap");
@@ -57,69 +54,6 @@ window.addEventListener("DOMContentLoaded", async () => {
     });
   });
   
-  
-  // const recipe_recommand_li = document.createElement("li");
-  // const recipe_recommand_li2 = document.createElement("li");
-  // const recipe_recommand_li3 = document.createElement("li");
-  // const recipe_recommand_li4 = document.createElement("li");
-  // const recipe_recommand_li5 = document.createElement("li");
-  // const recipe_recommand_li6 = document.createElement("li");
-  // const recipe_recommand_li7 = document.createElement("li");
-  // const rcp_img2_recommand = document.createElement("div");
-  
-  // const rcp_img2 = document.createElement("img");
-  // const rcp_nm2 = document.createElement("p");
-  // const rcp_img3 = document.createElement("img");
-  // const rcp_nm3 = document.createElement("p");
-  // const rcp_img4 = document.createElement("img");
-  // const rcp_nm4 = document.createElement("p");
-  // const rcp_img5 = document.createElement("img");
-  // const rcp_nm5 = document.createElement("p");
-  // const rcp_img6 = document.createElement("img");
-  // const rcp_nm6 = document.createElement("p");
-  // const rcp_img7 = document.createElement("img");
-  // const rcp_nm7 = document.createElement("p");
-  
-  // // 오늘의 추천 메뉴 보여줘!!
-  // rcp_recommand_list_wrap.append(recipe_recommand_li);
-  // rcp_recommand_list_wrap.append(recipe_recommand_li2);
-  // rcp_recommand_list_wrap.append(recipe_recommand_li3);
-  // rcp_recommand_list_wrap.append(recipe_recommand_li4);
-  // rcp_recommand_list_wrap.append(recipe_recommand_li5);
-  // rcp_recommand_list_wrap.append(recipe_recommand_li6);
-  // rcp_recommand_list_wrap.append(recipe_recommand_li7);
-  // recipe_recommand_li.append(rcp_img2, rcp_nm2);
-  // recipe_recommand_li2.append(rcp_img3, rcp_nm3);
-  // recipe_recommand_li3.append(rcp_img4, rcp_nm4);
-  // recipe_recommand_li4.append(rcp_img5, rcp_nm5);
-  // recipe_recommand_li5.append(rcp_img6, rcp_nm6);
-  // recipe_recommand_li6.append(rcp_img7, rcp_nm7);
-  
-  // // 속성
-  // rcp_img2_recommand.classList.add("rcp_img_recommand");
-  // recipe_recommand_li.classList.add("rcp_recommand_img");
-  // recipe_recommand_li2.classList.add("rcp_recommand_img2");
-  // recipe_recommand_li3.classList.add("rcp_recommand_img3");
-  // recipe_recommand_li4.classList.add("rcp_recommand_img4");
-  // recipe_recommand_li5.classList.add("rcp_recommand_img5");
-  // recipe_recommand_li6.classList.add("rcp_recommand_img6");
-
-  // rcp_nm2.classList.add("rcp_nm2");
-  // rcp_img2.src = data2[day].ATT_FILE_NO_MAIN;
-  // rcp_nm2.innerText = data2[day].RCP_NM;
-  // rcp_img3.src = data2[day + 1].ATT_FILE_NO_MAIN;
-  // rcp_nm3.innerText = data2[day + 1].RCP_NM;
-  // rcp_img4.src = data2[day + 2].ATT_FILE_NO_MAIN;
-  // rcp_nm4.innerText = data2[day + 2].RCP_NM;
-  // rcp_img5.src = data2[day + 3].ATT_FILE_NO_MAIN;
-  // rcp_nm5.innerText = data2[day + 3].RCP_NM;
-  // rcp_img6.src = data2[day + 4].ATT_FILE_NO_MAIN;
-  // rcp_nm6.innerText = data2[day + 4].RCP_NM;
-  // rcp_img7.src = data2[day + 5].ATT_FILE_NO_MAIN;
-  // rcp_nm7.innerText = data2[day + 5].RCP_NM;
-  
-  
-  
   function displayData(e, var_name, search_value){
     // submit이 되면 전송되는 기본으로 새로고침되는 현상 없애주기
     e.preventDefault();
@@ -133,7 +67,6 @@ window.addEventListener("DOMContentLoaded", async () => {
       let response = await fetch(url);
       let data = await response.json();
       let data2 = data.COOKRCP01.row;
-      console.log(data2);
       
       // forEach를 사용하여 여러개의 데이터를 하나씩 선택할 수 있다.
       // data2의 개수만큼 반복한다
@@ -233,44 +166,5 @@ window.addEventListener("DOMContentLoaded", async () => {
 
     displayData(e, 'RCP_PARTS_DTLS=', ingre_search.value)
 
-    // e.preventDefault();
-    // async function getData() {
-    //   let url = `http://openapi.foodsafetykorea.go.kr/api/${API_KEY}/COOKRCP01/json/1/1000/RCP_PARTS_DTLS=${ingre_search.value}/`;
-    //   let response = await fetch(url);
-    //   let data = await response.json();
-    //   let data2 = data.COOKRCP01.row;
-    //   data2.forEach((recipe_data) => {
-    //     if (recipe_data.RCP_NM == "해물김치찌개") {
-    //       return;
-    //     }
-
-    //     const rcp_list_wrap = document.querySelector(".rcp_list_wrap");
-    //     const rcp_list_li = document.createElement("li");
-    //     const rcp_img_wrap = document.createElement("div");
-    //     const rcp_img = document.createElement("img");
-    //     const rcp_nm = document.createElement("p");
-
-    //     rcp_list_wrap.append(rcp_list_li);
-    //     rcp_list_li.append(rcp_img, rcp_nm);
-
-    //     rcp_list_li.setAttribute("data-RCP_NM", recipe_data.RCP_NM);
-
-    //     rcp_img_wrap.classList.add("rcp_img_wrap");
-    //     rcp_nm.classList.add("rcp_nm");
-
-    //     rcp_img.src = recipe_data.ATT_FILE_NO_MAIN;
-    //     rcp_nm.innerText = recipe_data.RCP_NM;
-    //   });
-
-    //   let rcp_list_li = document.querySelectorAll(".rcp_list_wrap > li");
-
-    //   rcp_list_li.forEach((rcp_list_li_ele) => {
-    //     rcp_list_li_ele.addEventListener("click", () => {
-    //       let li_RCP_NM = rcp_list_li_ele.getAttribute("data-RCP_NM").trim();
-    //       location.href = `sub.html?${li_RCP_NM}`;
-    //     });
-    //   });
-    // }
-    // getData();
   });
 });
