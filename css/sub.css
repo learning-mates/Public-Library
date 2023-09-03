@@ -1,13 +1,5 @@
 @import url('./reset.css');
 
-.sub_tit {
-  display: inline-block;
-  font-size: 30px;
-  border-bottom: 3px solid orange;
-  margin-bottom: 20px;
-  padding-bottom: 5px;
-}
-
 .container {
   max-width: 700px;
   margin: 0 auto;
@@ -16,6 +8,37 @@
   flex-direction: column;
   padding-top: 50px;
 }
+.sub_tit {
+  display: inline-block;
+  font-size: 30px;
+  border-bottom: 3px solid orange;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+}
+
+header {
+  border-bottom: 1px solid rgba(224, 224, 224, 0.5);
+  font-family: "Caveat", cursive;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  height: 100px;
+  z-index: 99;
+}
+header .logo {
+  white-space: nowrap;
+  font-size: 50px;
+  height: 100%;
+  line-height: 100px;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+header .logo a {
+  color: #bf917e;
+  font-family: "Caveat", cursive;
+}
+
 .menu_img_wrap {
   width: 100%;
   margin: 0 auto 40px;
@@ -32,7 +55,6 @@
 .rcp_pat {
   font-size: 20px;
   padding-bottom: 30px;
-  /* border-bottom: 1px solid #ccc; */
 }
 .rcp_dtls_info_wrap {
   padding: 30px 0;
@@ -52,7 +74,6 @@
 .rcp_dtls_info_wrap .rcp_info_wrap p {
   position: relative;
   line-height: 2;
-  /* border-bottom: 1px solid #ccc; */
 }
 .rcp_dtls_info_wrap .rcp_info_wrap p strong {
   text-align: left;
@@ -64,9 +85,6 @@
 .menual_wrap {
   padding: 30px 0;
   border-top: 1px solid #ccc;
-}
-.menual_wrap .menual_list {
-
 }
 .menual_wrap .menual_list li {
   display: flex;
@@ -110,9 +128,6 @@
 .comment_wrap .comment_form select {
   margin-right: 10px;
 }
-.comment_wrap .comment_form select option {
-
-}
 .comment_wrap .comment_form input {
   flex: 1;
   margin-right: 10px;
@@ -121,8 +136,6 @@
 .comment_wrap .comment_form button {
   background-color: #fff;
   border: solid 1px #777;
-}
-.comment_wrap .comment_list {
 }
 .comment_wrap .comment_list li {
   margin-top: 20px;

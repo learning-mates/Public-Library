@@ -14,10 +14,7 @@ window.addEventListener("DOMContentLoaded", () => {
     const response = await fetch(url);
     const data = await response.json();
     let recipe_data = data.COOKRCP01.row[0];
-    // console.log(recipe_data)
 
-    // const container = document.querySelector('.container');
-    // const menu_img_wrap = document.querySelector('.menu_img_wrap');
     const menu_img = document.querySelector(".menu_img_wrap > img");
     const rcp_nm = document.querySelector(".rcp_nm");
     const rcp_pat = document.querySelector(".rcp_pat");
@@ -30,16 +27,6 @@ window.addEventListener("DOMContentLoaded", () => {
     const info_fat = document.querySelector(".info_fat");
     const rcp_na_tip = document.querySelector(".rcp_na_tip");
     const rcp_na_tip_wrap = document.querySelector(".rcp_na_tip_wrap");
-
-    // const menu_img_wrap = document.createElement('div');
-    // const menu_img = document.createElement('img');
-    // const rcp_nm = document.createElement('p');
-    // const rcp_pat = document.createElement('p');
-    // const rcp_dtls = document.createElement('p');
-    // const menual_list = document.createElement('ul');
-
-    // container.append(menu_img_wrap, rcp_nm, rcp_pat, rcp_dtls, menual_list);
-    // menu_img_wrap.append(menu_img);
 
     menu_img.src = recipe_data.ATT_FILE_NO_MK;
     menu_img.alt = recipe_data.RCP_NM;
@@ -57,12 +44,6 @@ window.addEventListener("DOMContentLoaded", () => {
     if (recipe_data.RCP_NA_TIP == "") {
       rcp_na_tip_wrap.remove();
     }
-
-    // menu_img_wrap.classList.add('menu_img_wrap');
-    // rcp_nm.classList.add('rcp_nm');
-    // rcp_pat.classList.add('rcp_pat');
-    // rcp_dtls.classList.add('rcp_dtls');
-    // menual_list.classList.add('menual_list');
 
     for (key in recipe_data) {
       if (recipe_data[key] != "") {
@@ -114,12 +95,6 @@ window.addEventListener("DOMContentLoaded", () => {
     comment.value = "";
 
     const comment_list_li = document.querySelectorAll(".comment_list li");
-
-    // comment_list_li.forEach((ele, )=>{
-
-    // })
-    console.log(comment_list_li_create);
-    console.log(comment_list_li);
 
     comment_count.innerText = `댓글 ${comment_list_li.length}`;
   });
