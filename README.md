@@ -1,15 +1,15 @@
 # Today's Recipe
 
-#### 목차
+<br />
 
 ## Today's Recipe 소개
+
 <img width="800" alt="pium_001" src="https://github.com/SeSAC-PIUM/.github/assets/77762680/86e8b609-5b25-4940-869a-f930eb8e1c0e">
 
 ### [🔗 배포 링크](https://learning-mates.github.io/Today_Recipe/)
 > Today's Recipe는 레시피 추천 및 검색 웹 사이트 입니다.
 
-<br/>
-<br/>
+<br />
 
 ## 팀원
 
@@ -18,44 +18,42 @@
 | 유미정 | 프론트엔드 | ymj369@nate.com |
 | 양희광 | 프론트엔드 | ekzm7040@naver.com |
 
-<br/>
-<br/>
+<br />
 
 ## 주요 기능
-1. 
+- **메뉴, 재료 검색** : 메뉴 또는 재료를 검색하면 그에 맞는 레시피들을 불러옴
+- **메뉴 추천** : 매일 매일 추천하는 메뉴가 바뀜
+- **메뉴명 전달** : 레시피를 클릭하면 레시피의 상세보기가 나옴
+- **레시피 상세보기** : 메뉴의 종류, 재료, 영양정보, 레시피, 저감조리법을 알려줌
+- **배포** : Github.io로 배포
 
-<br/>
-<br/>
-
-## 메인 로직
-
-
-<br/>
-<br/>
+<br />
 
 ## ✨ 페이지 설명
 
-|메인|온보딩|
+|메인|서브|
 |:----:|:----:|
-|<img src='https://github.com/SeSAC-PIUM/.github/assets/77762680/7ab6ffed-f69d-4ef7-8eeb-c0ea4c538e77' width="300" />|<img src='https://github.com/SeSAC-PIUM/.github/assets/77762680/b4e44ff1-fa9c-4d41-8cf4-af352728c1ea' width="300"/><br/><br/><br/><img src='https://github.com/SeSAC-PIUM/.github/assets/77762680/d424331e-c329-4217-b625-178ddee7138e' width="300" />|
+|<img src='https://github.com/SeSAC-PIUM/.github/assets/77762680/7ab6ffed-f69d-4ef7-8eeb-c0ea4c538e77' width="300" />|<img src='https://github.com/SeSAC-PIUM/.github/assets/77762680/b4e44ff1-fa9c-4d41-8cf4-af352728c1ea' width="300"/><br /><br /><br /><img src='https://github.com/SeSAC-PIUM/.github/assets/77762680/d424331e-c329-4217-b625-178ddee7138e' width="300" />|
 
 <pre>
-<strong> ✨메인 </strong> </br>
-[미정]</br>- 시안에 맞게 UI 디테일 수정 </br>- 반복되는 코드를 함수로 묶거나 반복문을 사용하여 간결하게 하는 작업</br>
-[희광]</br>- JavaScript를 활용하여 header,footer 각 페이지별 동일하게 구현</br>- flex를 이용한 main page 구현</br>- swiper library를 통해 banner 구현</br>- JavaScript를 활용하여 하트클릭  on/off 구현</br>- localStorage를 활용하여  하트 수량 체크 구현</br> 
+<strong> ✨메인 </strong>
+<br />- async, await, fetch를 사용하여 api를 불러와 json으로 변환
+- 페이지 로드 시 6개만 데이터를 가져옴
+- 검색을 하면 input의 value값을 api 요청인자에 넣고 해당 데이터를 가져옴
+<br />- forEach를 사용하여 가져온 데이터 수만큼 요소를 생성하여 화면에 나타나게 함
+<br />- 레시피를 클릭하면 레시피명을 이동할 주소 뒤에 넣고 해당 주소로 이동함
+
+<br />
+
+<strong> ✨서브 </strong>
+<br />- 주소를 디코딩하고 레시피명만 추출하여 api 요청인자에 넣고 해당 데이터를 가져옴 
+<br />- 가져온 데이터의 순서가 뒤죽박죽이고 빈 데이터도 있어서 if문과 정규식으로 조건에 맞게 데이터를 가공해 배열에 넣고 정렬함
+<br />- 가공한 데이터를 해당 요소에 innerText를 사용해 화면에 나타나게 함
 </pre>
 
-<pre>
-<strong> ✨온보딩 </strong> </br>
-[지현]</br>- 설명텍스트 </br>
-[소연]</br>- 레이아웃 구성과 페이지 이동 기능 구현</br>
-</pre>
+<br />
 
-
-<br/>
-<br/>
-
-## Stacks
+## 🛠 기술 스택
 #### • 개발언어
 <img src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white"/> <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=CSS3&Color=white"/> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white"/>
 
@@ -65,17 +63,13 @@
 #### • 서비스 배포
 <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
 
-<br/>
-<br/>
+<br />
 
 ## 🗓️ 진행기간
 #### 2023년 7월 14일 ~ 26일 (약 2주)
 
-
-
-
+<br />
 
 <p align="right"><a href="#todays-recipe">(🔼 Top)</a></p>
 
-<br/>
-<br/>
+<br />
