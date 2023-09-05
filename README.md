@@ -70,6 +70,10 @@
 
 <br />
 
+## 💭 작업회고
+
+#### [👉 유미정의 작업회고](https://lumimi.tistory.com/25)
+
 <p align="right"><a href="#todays-recipe">(🔼 Top)</a></p>
 
 <br />
